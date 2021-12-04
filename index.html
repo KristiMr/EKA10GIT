@@ -1,1 +1,212 @@
-esimene git
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Valijarakendus</title>
+</head>
+
+<body class="index">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand pe-5" href="index.html">
+                        <img src="img/logo-blue.svg" alt="" width="175" height="50"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Hääletamine</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kandidaadid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tulemused</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sisukaart</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-right mb-2 mb-lg-0 ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Est</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Eng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid hero">
+        <div class="container p-5">
+            <div class="row justify-content-between">
+                <div class="col-5 text-white">
+                    <h1>Tere tulemast Valijarakendusse</h1>
+                    <p>Olete hääletamas 2021. aasta Eesti kohalikel valimistel. Oma hääle andmiseks valijarakenduses on
+                        vajalik sisselogimine.
+                        Selleks valige paremalt sobiv võimalus.</p>
+                </div>
+                <div class="col-5 align-self-end">
+                    <div id="log-in" class="hero-login">
+
+                        <a class="btn btn-primary pt-3 pb-3 collapsed" data-bs-toggle="collapse" href="#id-kaart"
+                            role="button" aria-expanded="false" aria-controls="id-kaart">
+                            ID-kaart
+                        </a>
+                        <a class="btn btn-primary pt-3 pb-3" data-bs-toggle="collapse" href="#mobiil-id" role="button"
+                            aria-expanded="true" aria-controls="mobiil-id">
+                            Mobiil-ID
+                        </a>
+                        <a class="btn btn-primary pt-3 pb-3 collapsed" data-bs-toggle="collapse" href="#smart-id"
+                            role="button" aria-expanded="false" aria-controls="smart-id">
+                            Smart-ID
+                        </a>
+
+                        <div class="accordion-group">
+                            <div class="collapse" id="id-kaart" data-bs-parent="#log-in">
+                                <div class="card card-body">
+                                    <h4 class="mb-4">Sisse logimine</h4>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="isikukood" class="form-label">Isikukood</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><img src="img/user-icon.svg" alt=""
+                                                        width="18" height="18" class="d-inline-block align-text-top">
+                                                </div>
+                                                <input type="text" class="form-control" id="isikukood">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="telefon" class="form-label">Telefoni number</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><img src="img/phone-icon.svg" alt=""
+                                                        width="18" height="18" class="d-inline-block align-text-top">
+                                                </div>
+                                                <input type="tel" class="form-control" id="telefon">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                            data-bs-target="#pinCode">Kinnita</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="collapse show" id="mobiil-id" data-bs-parent="#log-in">
+                                <div class="card card-body">
+                                    <h4 class="mb-4">Sisse logimine</h4>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="isikukood" class="form-label">Isikukood</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><img src="img/user-icon.svg" alt=""
+                                                        width="18" height="18" class="d-inline-block align-text-top">
+                                                </div>
+                                                <input type="text" class="form-control" id="isikukood">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="telefon" class="form-label">Telefoni number</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><img src="img/phone-icon.svg" alt=""
+                                                        width="18" height="18" class="d-inline-block align-text-top">
+                                                </div>
+                                                <input type="tel" class="form-control" id="telefon">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                            data-bs-target="#pinCode">Kinnita</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="collapse" id="smart-id" data-bs-parent="#log-in">
+                                <div class="card card-body">
+                                    <h4 class="mb-4">Sisse logimine</h4>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="isikukood" class="form-label">Isikukood</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><img src="img/user-icon.svg" alt=""
+                                                        width="18" height="18" class="d-inline-block align-text-top">
+                                                </div>
+                                                <input type="text" class="form-control" id="isikukood">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="telefon" class="form-label">Telefoni number</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><img src="img/phone-icon.svg" alt=""
+                                                        width="18" height="18" class="d-inline-block align-text-top">
+                                                </div>
+                                                <input type="tel" class="form-control" id="telefon">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                            data-bs-target="#pinCode">Kinnita</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pinCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-primary"><b>Kontrollkood: 0628</b></h3>
+                    <p>Veendu kontrollkoodi õigsuses ja sisesta mobiiliga PIN-1 kood</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tühista</button>
+                    <a type="button" class="btn btn-primary" href="step-1.html">Kinnita</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.hero-login > a').on('click', function (e) {
+            if ($(this).parents('.hero-login').children('.collapse').hasClass('show')) {
+                e.stopPropagation();
+            }
+        });
+    </script>
+</body>
+
+</html>
