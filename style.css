@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background:  url(img/fern.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    border: 20px solid #fff;
+    border-top: 0;
+}
+body.index {
+    background:  url(img/fern.jpg);
+}
+.form-control:focus,
+.btn-check:focus + .btn-primary, .btn-primary:focus,
+.accordion-button:focus {
+    box-shadow: 0 0 0 0
+}
+
+.input-group-text {
+    background: #fff;
+}
+.input-group input {
+    border-left: 0
+}
+
+::-moz-placeholder{
+    font-style: italic
+}
+.btn {
+     font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 32px;
+}
+.modal-header,
+.modal-footer {
+    border: 0
+}
+.light-bg {
+    background: #fff;
+    border-radius: 4px;
+}
+header {
+    background: #ffffff
+}
+.hero {
+    padding: 8% 0 10%
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.hero-login a.btn {
+    color: #171717;
+    background: #fff;
+    border: 0;
+    font-weight: 700;
+    width: 32.7%;
+    border-radius: 4px 4px 0 0 
+}
+.hero-login a.btn.collapsed {
+    font-weight: 400;
+    	-webkit-box-shadow: inset 0 -17px 19px -17px rgba(0,0,0,0.6);
+	   -moz-box-shadow: inset 0 -17px 19px -17px rgba(0,0,0,0.6);
+	        box-shadow: inset 0 -17px 19px -17px rgba(0,0,0,0.6);
+}
+.hero-login .accordion-group {
+    margin-top: -10px;
+    border-radius: 0 0 4px 4px;
+}
+.hero-login .card {
+    border: 0;
+    border-radius: 0 0 4px 4px;
+    padding: 40px
+}
+.hero-login button {
+    padding: 12px 32px;
+    width: 50%
+}
+.step {
+    padding-top: 16px;
+    text-transform: uppercase;
+    background:  #fff;  
+}
+.step.active {
+    background:  #B060BC;
+    font-weight: 700;
+    color: #fff
+}
